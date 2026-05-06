@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>邮箱留痕 / MailTrace</title>
+    <style>
+        :root { --blue: #3b82f6; --dark: #0f172a; --text: #1e293b; --muted: #64748b; --bg: #f8fafc; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; color: var(--text); background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 55%, #06b6d4 100%); min-height: 100vh; }
+        .wrap { max-width: 880px; margin: 0 auto; padding: 72px 20px; }
+        .card { background: rgba(255,255,255,.96); border-radius: 28px; padding: 48px; box-shadow: 0 24px 80px rgba(15,23,42,.28); }
+        .badge { display: inline-block; color: #fff; background: var(--blue); padding: 6px 12px; border-radius: 999px; font-size: 14px; font-weight: 700; }
+        h1 { font-size: clamp(36px, 6vw, 64px); line-height: 1.05; margin: 22px 0 14px; color: var(--dark); }
+        .subtitle { font-size: 20px; color: var(--muted); margin-bottom: 32px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 34px 0; }
+        .feature { background: #f1f5f9; border-radius: 18px; padding: 20px; }
+        .feature strong { color: var(--dark); }
+        .links { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
+        a.button { color: #fff; background: var(--dark); text-decoration: none; padding: 13px 18px; border-radius: 14px; font-weight: 700; }
+        a.button.secondary { color: var(--dark); background: #e2e8f0; }
+        footer { color: rgba(255,255,255,.78); text-align: center; margin-top: 28px; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <main class="wrap">
+        <section class="card">
+            <span class="badge">Privacy-first iOS App</span>
+            <h1>邮箱留痕<br>MailTrace</h1>
+            <p class="subtitle">拍照自动添加时间水印，并通过系统邮件发送给自己。适用于工作记录、现场留痕和时间证明。</p>
+            <p class="subtitle">Snap, timestamp, and email photo records to yourself — all processed locally on your device.</p>
+
+            <div class="grid">
+                <div class="feature"><strong>本地处理</strong><br>照片水印与压缩均在设备本地完成。</div>
+                <div class="feature"><strong>邮件归档</strong><br>通过 iOS 系统邮件发送，不保存邮箱密码。</div>
+                <div class="feature"><strong>零追踪</strong><br>不集成广告、分析或第三方追踪 SDK。</div>
+            </div>
+
+            <div class="links">
+                <a class="button" href="privacy-policy.html">隐私政策 / Privacy Policy</a>
+                <a class="button secondary" href="support.html">技术支持 / Support</a>
+            </div>
+        </section>
+        <footer>© 2026 MailTrace. All rights reserved.</footer>
+    </main>
+</body>
+</html>
